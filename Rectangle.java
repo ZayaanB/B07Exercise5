@@ -1,5 +1,7 @@
 import exercise4.Point;
 
+import java.util.Objects;
+
 public class Rectangle {
     Point A;
     Point B;
