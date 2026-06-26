@@ -1,4 +1,4 @@
-import exercise4.Point;
+package exercise4;
 
 public class Rectangle {
     Point A;
