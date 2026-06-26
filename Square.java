@@ -6,7 +6,7 @@ public class Square{
 	Point C;
     Point D; 
 	
-    public Sqaure(Point A, Point B, Point C, Point D){
+    public Square(Point A, Point B, Point C, Point D){
         this.A = A; 
         this.B = B;
 		this.C = C; 
