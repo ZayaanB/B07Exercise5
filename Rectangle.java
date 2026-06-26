@@ -14,7 +14,7 @@ public class Rectangle {
         this.D = D;
 
         if ((A.distance(B) != C.distance(D)) || (B.distance(C) != A.distance(D))) {
-            throw new Exception("Not a valid rectangle");
+            throw new IllegalArgumentException("Not a valid rectangle");
         }
     }
     
