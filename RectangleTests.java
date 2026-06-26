@@ -30,16 +30,19 @@ class RectangleTests {
     }
 
     @Test
-    void testEqualSelf() {
-        assertTrue(RECTANGLE.equals(RECTANGLE));
+    void testEqualFalse() {
+        Rectangle r1 = new Rectangle(P1, P2, P3, P4);
+        Point q1 = new Point(0, 0);
+        Point q2 = new Point(5, 0);
+        Point q3 = new Point(5, 4);
+        Point q4 = new Point(0, 4);
+        Rectangle r2 = new Rectangle(q1, q2, q3, q4);
+        assertFalse(r1.equals(r2));
     }
 
     @Test
-    void testEqualFalse() {
-        Point p5 = new Point(1, 1);
-        Rectangle r1 = new Rectangle(P1, P2, P3, P4);
-        Rectangle r2 = new Rectangle(p5, P2, P3, P4);
-        assertFalse(r1.equals(r2));
+    void testEqualSelf() {
+        assertTrue(RECTANGLE.equals(RECTANGLE));
     }
 
     @Test
